@@ -6,7 +6,7 @@ const item = {
   createdAt: new Date(),
   stock: 12,
 };
-const item2 = {
+const item2: Product = {
   name: 'nuevo producto item2',
   createdAt: new Date(),
   stock: 10,
@@ -20,12 +20,12 @@ const item3: Product = {
 
 createProduct(item);
 createProduct(item2);
-// addProduct({
-//   title: 'producto 3',
-//   createdAt: new Date(),
-//   stock: 55,
-//   size: 'L',
-// });
+createProduct({
+  name: 'producto 3',
+  createdAt: new Date(),
+  stock: 55,
+  size: 'L',
+});
 createProduct(item3);
 
 const stock = calcStock();

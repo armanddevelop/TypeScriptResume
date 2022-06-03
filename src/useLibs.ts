@@ -1,0 +1,6 @@
+import { subDays, format } from 'date-fns';
+
+const date = new Date(1998, 1, 28);
+const result = subDays(date, 30);
+const str = format(result, 'dd/MM/yyyy');
+console.log('Esto es la fecha ', str);
